@@ -320,7 +320,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|el|7, latest|
+|el|7, 8|
 |debian|all|
 |ubuntu|all|
 

@@ -2,6 +2,20 @@
 #
 # Ansible managed
 #
+exclude_paths:
+  - ./meta/preferences.yml
+  - ./molecule/default/prepare.yml
+  - ./molecule/default/converge.yml
+  - ./molecule/default/verify.yml
   - ./molecule/default/collections.yml
   - ./.tox
   - ./.cache
+
+skip_list:  # or 'skip_list' to silence them completely
+  - experimental  # all rules tagged as experimental
+  - fqcn-builtins  # Use FQCN for builtin actions.
+  - meta-no-tags  # Tags must contain lowercase letters and digits only.
+  - no-handler  # Tasks that run when changed should likely be handlers.
+  - unnamed-task  # All tasks should be named.
+  - var-spacing  # Variables should have spaces before and after: {{ var_name }}.
+  - yaml  # Violations reported by yamllint.

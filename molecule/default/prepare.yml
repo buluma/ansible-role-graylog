@@ -7,3 +7,8 @@
   roles:
     - role: buluma.bootstrap
     - role: buluma.core_dependencies
+    - role: buluma.openjdk
+    - role: lean_delivery.java
+      version: 7.1.0
+    - role: elastic.elasticsearch
+      version: v7.17.0

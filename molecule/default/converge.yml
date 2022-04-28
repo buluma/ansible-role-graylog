@@ -7,6 +7,7 @@
     graylog_install_mongodb: True
     graylog_install_java: False
     graylog_not_testing: False
+    # TODO: change to defaults var
     graylog_version: "{{ lookup('env', 'GRAYLOG_VERSION') | regex_search('^\\d+\\.\\d+') }}"
     graylog_full_version: "'{{ lookup('env', 'GRAYLOG_VERSION') }}-{{ lookup('env', 'GRAYLOG_REVISION') }}'"
     graylog_mongodb_version: 4.4

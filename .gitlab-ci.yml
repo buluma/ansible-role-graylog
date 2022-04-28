@@ -7,6 +7,9 @@ services:
 variables:
   DOCKER_HOST: "tcp://docker:2375"
   PY_COLORS: 1
+  ANSIBLE_FORCE_COLOR: 1
+  GRAYLOG_VERSION: 4.2.1
+  GRAYLOG_REVISION: 1
 
 molecule:
   stage: build

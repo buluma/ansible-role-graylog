@@ -1,12 +1,12 @@
 ---
 
 - block:
-    - name: "APT Key should be accepted for the MongoDB repo (Ubuntu)"
+    - name: "set APT Key for MongoDB repo (Ubuntu)"
       ansible.builtin.apt_key:
         url: "{{ graylog_mongodb_ubuntu_key }}"
         state: present
 
-    - name: "Repositories should be updated (Ubuntu)"
+    - name: "update MongoDB repositories (Ubuntu)"
       ansible.builtin.apt_repository:
         repo: "{{ graylog_mongodb_ubuntu_repo }}"
         state: "present"
@@ -15,12 +15,12 @@
     - ansible_distribution == 'Ubuntu'
 
 - block:
-    - name: "APT Key should be accepted for the MongoDB repo (Debian)"
+    - name: "set APT Key for MongoDB repo (Debian)"
       ansible.builtin.apt_key:
         url: "{{ graylog_mongodb_debian_key }}"
         state: present
 
-    - name: "Repositories should be updated (Debian)"
+    - name: "update MongoDB repositories (Debian)"
       ansible.builtin.apt_repository:
         repo: "{{ graylog_mongodb_debian_repo }}"
         state: "present"
@@ -33,7 +33,7 @@
     name: "{{ graylog_mongodb_package_name }}"
     state: "present"
 
-- name: "MongoDB service file should be installed"
+- name: "install MongoDB service file"
   ansible.builtin.template:
     src: "mongodb.service-Debian.j2"
     dest: "/lib/systemd/system/mongod.service"
@@ -47,7 +47,7 @@
     - "reload systemd configuration"
     - "restart mongod"
 
-- name: "MongoDB should be configured"
+- name: "configure MongoDB"
   ansible.builtin.template:
     src: "mongodb.conf.j2"
     dest: "/etc/mongod.conf"
@@ -57,7 +57,7 @@
   notify: "restart mongod"
 
 - meta: "flush_handlers"
-- name: "Wait for MongoDB to startup"
+- name: "wait for MongoDB to startup"
   ansible.builtin.wait_for:
     host: "{{graylog_mongodb_bind_ip}}"
     port: "{{graylog_mongodb_bind_port}}"

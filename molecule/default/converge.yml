@@ -37,7 +37,6 @@
       node.data: True
       node.master: True
 
-
     # Plugins
     graylog_install_enterprise_plugins: True
     graylog_install_integrations_plugins: True

@@ -1,5 +1,5 @@
 ---
-
+# https://github.com/Graylog2/graylog-ansible-role/blob/master/molecule/default/converge.yml
 - name: "check for supported distribution"
   ansible.builtin.fail:
     msg: "Distro {{ ansible_distribution }} is not supported yet."

@@ -18,7 +18,7 @@ jobs:
           path: 'graylog2.graylog-ansible-role'
 
       - name: Set up Python 3.
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4.1.0
         with:
           python-version: '3.x'
 
@@ -47,7 +47,7 @@ jobs:
           path: 'graylog2.graylog-ansible-role'
 
       - name: Set up Python 3.
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4.1.0
         with:
           python-version: '3.x'
 

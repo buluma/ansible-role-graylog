@@ -25,7 +25,11 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
+<<<<<<< HEAD
         uses: buluma/molecule-action@v5.0.1
+=======
+        uses: buluma/molecule-action@v4.0.7
+>>>>>>> 0e2389eb96f4f86ae3c483158963512aac5269e3
         with:
           command: lint
   test:
@@ -62,7 +66,11 @@ jobs:
       - name: parse apparmor for mysql
         run: sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.mysqld
       - name: molecule
+<<<<<<< HEAD
         uses: buluma/molecule-action@v5.0.1
+=======
+        uses: buluma/molecule-action@v4.0.7
+>>>>>>> 0e2389eb96f4f86ae3c483158963512aac5269e3
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}

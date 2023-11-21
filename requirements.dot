@@ -1,0 +1,19 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "graylog" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.core_dependencies" [fillcolor=green style=filled]
+    "lean_delivery.java" [fillcolor=green style=filled]
+    "" [fillcolor=green style=filled]
+    "elastic.elasticsearch" [fillcolor=green style=filled]
+    "" [fillcolor=green style=filled]
+  }
+  "graylog" -> "buluma.bootstrap"
+  "graylog" -> "buluma.core_dependencies"
+  "graylog" -> "lean_delivery.java"
+  "graylog" -> ""
+  "graylog" -> "elastic.elasticsearch"
+  "graylog" -> ""
+}

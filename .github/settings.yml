@@ -5,4 +5,4 @@
 repository:
   description: Install and configure Graylog log management.
   homepage: https://buluma.github.io/
-  topics: monitoring, system", ansible, molecule, tox, playbook, hacktoberfest
+  topics: monitoring, system", ansible, molecule, tox, playbook

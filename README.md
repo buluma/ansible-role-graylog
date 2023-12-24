@@ -1,10 +1,10 @@
-# [Ansible role graylog](#graylog)
+# Ansible role [graylog](https://galaxy.ansible.com/ui/standalone/roles/buluma/graylog/documentation)
 
 Install and configure Graylog log management.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-graylog/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-graylog/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-graylog.svg)](https://github.com/buluma/ansible-role-graylog/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-graylog.svg)](https://github.com/buluma/ansible-role-graylog/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-graylog.svg)](https://github.com/buluma/ansible-role-graylog/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-graylog/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-graylog/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-graylog.svg)](https://github.com/buluma/ansible-role-graylog/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-graylog.svg)](https://github.com/buluma/ansible-role-graylog/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-graylog.svg)](https://github.com/buluma/ansible-role-graylog/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/graylog)](https://galaxy.ansible.com/ui/standalone/roles/buluma/graylog/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -359,13 +359,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-graylog/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-graylog/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
